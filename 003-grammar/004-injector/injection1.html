@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="a4_3">
+
+<head>
+  <title>1.推断式注入</title>
+  <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <p>
+    顾名思义，推断式注入标记是一种猜测式的注入，在没有明确的声明的情况下，Angular会认定参数名称就是依赖注入的函数名，并在内部调用函数对象的toString（）方法，获取对应的参数列表。最后，调用注入器（injector）将这些参数注入应用的实例中，从而实现依赖注入的过程。
+  </p>
+  <p>
+    缺点：Angular将会自动通过annotate函数提取实例化参数时传递来的列表，并最终通过注入器（injector）将这些列表注入控制器中；需要说明的是：这种注入方式不需要关注注入时参数的先后顺序，Angular会根据依赖的程度自动处理，由于Angular需要根据参数列表分析注入服务，因此，这种注入的方式不能处理压缩或混淆后的代码，只能处理原始的代码。
+  </p>
+  <div ng-controller="c4_3">
+    <input id="btnAlert" type="button" value="弹出对话框" ng-click="onClick('我是一个弹出对话框')" />
+  </div>
+  <script type="text/javascript">
+    var a4_3 = angular.module('a4_3', [])
+      .factory('$show', function ($window) {
+        return {
+          show: function (text) {
+            $window.alert(text);
+          }
+        };
+      });
+    // 此处的【$show】参数的注入方式即为推断式注入。
+    // 即直接使用参数名‘$show’去上下文中寻找是否有同名的方法，有则直接注入进来。
+    var c4_3 = function ($scope, $show) {
+      $scope.onClick = function (msg) {
+        $show.show(msg);
+      }
+    }
+    a4_3.controller('c4_3', c4_3);
+
+  </script>
+</body>
+
+</html>
