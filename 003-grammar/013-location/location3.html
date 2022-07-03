@@ -40,26 +40,27 @@
 </head>
 
 <body>
+  <p>一个不错的教程：https://www.jianshu.com/p/a08167c28469</p>
   <div class="frame" ng-controller="c9_7">
     <div class="title">
-      <input type="radio" name="type" ng-click="rdo_click(0)" />Hashbang模式
-      <input type="radio" name="type" checked ng-click="rdo_click(1)" />HTML5模式
+      <input type="radio" name="type" checked ng-click="rdo_click(0)" />Hashbang模式
+      <input type="radio" name="type" ng-click="rdo_click(1)" />HTML5模式
     </div>
     <div id="hashbang" ng-class="cls_a" ng-controller="c9_5_hashbang">
       <div ts-brow-bar bs="hashbang" class="brow"></div>
-      <div>hash片段:{{$location.hash()}}</div>
-      <div>查询字符:{{$location.search()}}</div>
-      <div>页面路径:{{$location.path()}}</div>
-      <a href="http://localhost:5500/003-grammar/013-location/location2.html?a=b">/a/c?a=b</a> |
-      <a href="http://localhost:5500/003-grammar/013-location/location2.html?flag#hash"> b/c?flag#hash</a>
+      <div>hash片段：{{$location.hash()}}</div>
+      <div>查询字符：{{$location.search()}}</div>
+      <div>页面路径：{{$location.path()}}</div>
+      <a href="http://www.rttop.cn/a/c?a=b">/a/c?a=b</a> |
+      <a href="http://www.rttop.cn/a/b/c?flag#hash"> a/b/c?flag#hash</a>
     </div>
     <div id="html5" ng-class="cls_b" ng-controller="c9_5_html5">
       <div ts-brow-bar bs="html5" class="brow"></div>
-      <div>hash片段:{{$location.hash()}}</div>
-      <div>查询字符:{{$location.search()}}</div>
-      <div>页面路径:{{$location.path()}}</div>
-      <a href="http://localhost:5500/003-grammar/013-location/location2.html?a=b">/a/c?a=b</a> |
-      <a href="http://localhost:5500/003-grammar/013-location/location2.html?flag#hash"> b/c?flag#hash</a>
+      <div>hash片段：{{$location.hash()}}</div>
+      <div>查询字符：{{$location.search()}}</div>
+      <div>页面路径：{{$location.path()}}</div>
+      <a href="http://www.rttop.cn/a/c?a=b">/a/c?a=b</a> |
+      <a href="http://www.rttop.cn/a/b/c?flag#hash"> a/b/c?flag#hash</a>
     </div>
   </div>
   <script type="text/javascript">
@@ -76,10 +77,7 @@
             $scope.cls_b = "show";
           }
         }
-      });
-
-    app.controller('c9_5_hashbang', c9_5_hashbang);
-    app.controller('c9_5_html5', c9_5_html5);
+      })
 
     function c9_5_hashbang($scope, $location) {
       $scope.$location = $location;
@@ -101,8 +99,10 @@
       };
     }
     var Brows = {
-      html5: new Brow('http://localhost:5500/003-grammar/013-location/location2.html?a=b#hash', '/a/index.html'),
-      hashbang: new Brow('http://localhost:5500/003-grammar/013-location/location2.html#!/c?a=b#hash',
+      html5: new Brow('http://www.rttop.cn/a/c?a=b#hash',
+        '/a/index.html'),
+      hashbang: new
+      Brow('http://www.rttop.cn/a/index.html#!/c?a=b#hash',
         '/a/index.html')
     };
 
@@ -115,16 +115,17 @@
         $provide.value('$sniffer', {
           history: name == 'html5'
         });
-        $compileProvider.directive('tsBrowBar', function () {
-          return function (scope, elm, attrs) {
-            var bs = Brows[attrs.bs];
-            var input = angular.element('<input type="text" />').val(bs.url());
-            bs.url = function (url) {
-              return input.val(url);
+        $compileProvider.directive('tsBrowBar',
+          function () {
+            return function (scope, elm, attrs) {
+              var bs = Brows[attrs.bs];
+              var input = angular.element('<input  type = "text" / > ').val(bs.url());
+              bs.url = function (url) {
+                return input.val(url);
+              };
+              elm.append(input);
             };
-            elm.append(input);
-          };
-        });
+          });
       }]);
     }
     createBrow('html5');
