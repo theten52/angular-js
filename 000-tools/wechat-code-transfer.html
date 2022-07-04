@@ -2,55 +2,57 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+  <meta charset="utf-8">
+  <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
 </head>
 
 <body>
-    <div ng-app="myApp" ng-controller="myCtrl">
-        <p>
-            <p>原始代码：</p>
-            <textarea ng-model="originCode" ng-change="trans()"></textarea>
-        </p>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <p>
+      <p>原始代码：</p>
+      <textarea ng-model="originCode" ng-change="trans()"></textarea>
+    </p>
 
-        <h1>新的代码：</h1>
-        <hr />
-        <p>{{originCode | codeTrans}}</p>
-    </div>
-    <script>
-        var app = angular.module("myApp", []);
+    <h1>新的代码：</h1>
+    <hr />
+    <p>{{originCode | codeTrans}}</p>
+  </div>
+  <script>
+    var app = angular.module("myApp", []);
 
-        app.controller("myCtrl", function ($scope) {
-            $scope.originCode = "";
-        });
+    app.controller("myCtrl", function ($scope) {
+      $scope.originCode = "";
+    });
 
-        app.filter("codeTrans", function () {
-            return function (inputText) {
-                var str = inputText
-                    .replace(/＜/g, "<")
-                    .replace(/＞/g, ">")
-                    .replace(/，/g, ",")
-                    .replace(/，/g, ",")
-                    .replace(/；/g, ";")
-                    .replace(/：/g, ":")
-                    .replace(/？/g, "?")
-                    .replace(/！/g, "!")
-                    .replace(/（/g, "(")
-                    .replace(/）/g, ")")
-                    .replace(/－/g, "-")
-                    .replace(/＝/g, "=")
-                    .replace(/／/g, "/")
-                    .replace(/［/g, "[")
-                    .replace(/］/g, "]")
-                    .replace(/＠/g, "@")
-                    .replace(/｛/g, "{")
-                    .replace(/｝/g, "}")
-                    .replace("../Script/angular.min.js",
-                        "https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js");
-                return str;
-            };
-        });
-    </script>
+    app.filter("codeTrans", function () {
+      return function (inputText) {
+        var str = inputText
+          .replace(/＜/g, "<")
+          .replace(/＞/g, ">")
+          .replace(/，/g, ",")
+          .replace(/，/g, ",")
+          .replace(/；/g, ";")
+          .replace(/：/g, ":")
+          .replace(/？/g, "?")
+          .replace(/！/g, "!")
+          .replace(/（/g, "(")
+          .replace(/）/g, ")")
+          .replace(/－/g, "-")
+          .replace(/＝/g, "=")
+          .replace(/／/g, "/")
+          .replace(/［/g, "[")
+          .replace(/］/g, "]")
+          .replace(/＠/g, "@")
+          .replace(/｛/g, "{")
+          .replace(/｝/g, "}")
+          .replace(/＊/g, "*")
+          .replace("../Script/angular.min.js",
+            "https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js");
+        return str;
+      };
+    });
+
+  </script>
 </body>
 
 </html>
