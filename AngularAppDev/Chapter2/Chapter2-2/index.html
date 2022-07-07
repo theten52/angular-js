@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>hello, world</title>
+    <!—加载模块加载器SystemJS-->
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <script>
+        (function () {
+            System.config({ // 对SystemJS进行配置
+                packages: { // 路径配置
+                    '/': { // 根路径
+                        defaultExtension: 'js' // 设置根路径下的资源的默认后缀为.js
+                    }
+                }
+            })
+        })();
+
+        // 使用模块加载器SystemJS加载index.js
+        System.import('index.js');
+    </script>
+</head>
+<body>
+    hello, world
+</body>
+</html>

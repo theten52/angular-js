@@ -1,0 +1,9 @@
+{
+    "name": "chapter2-2",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "express": "4.16.3",
+        "systemjs": "0.21.5"
+    }
+}
