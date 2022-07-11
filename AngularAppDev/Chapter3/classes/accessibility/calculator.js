@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Calculator = void 0;
 // 计时器类
 var Calculator = /** @class */ (function () {
     function Calculator(precision) {
@@ -11,7 +12,7 @@ var Calculator = /** @class */ (function () {
         get: function () {
             return this._maxOperand;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     // 受保护的操作数检查方法

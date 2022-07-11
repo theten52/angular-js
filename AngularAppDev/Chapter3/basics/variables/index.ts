@@ -1,7 +1,7 @@
-export {} // 使当前文件成为一个模块
+export { } // 使当前文件成为一个模块
 
 for (let i = 0; i < 10; i++) {
-    setTimeout(function(){ console.log(i); }, 100 * i);
+    setTimeout(function () { console.log(i); }, 100 * i);
 }
 
 var student = 'L';

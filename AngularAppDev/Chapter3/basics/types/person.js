@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 function Person() {
     this.getName = function () {
         return 'Lcng';

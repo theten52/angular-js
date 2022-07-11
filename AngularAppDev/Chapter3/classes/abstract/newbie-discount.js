@@ -15,20 +15,19 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ElectroCar = void 0;
-var car_1 = require("./car"); // 导入汽车类
-// 电动汽车类
-var ElectroCar = /** @class */ (function (_super) {
-    __extends(ElectroCar, _super);
-    function ElectroCar() {
-        return _super !== null && _super.apply(this, arguments) || this;
+exports.NewbieDiscount = void 0;
+var discount_1 = require("./discount");
+var NewbieDiscount = /** @class */ (function (_super) {
+    __extends(NewbieDiscount, _super);
+    function NewbieDiscount() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.description = '新用户一律5折';
+        return _this;
     }
-    // 重写继承自父类的run()方法
-    ElectroCar.prototype.run = function () {
-        _super.prototype.run.call(this); // 调用父类的run()方法
-        console.log('我是烧电的。。');
+    NewbieDiscount.prototype.getDiscountAmount = function () {
+        return this.totalAmount * 0.5;
     };
-    return ElectroCar;
-}(car_1.Car));
-exports.ElectroCar = ElectroCar;
-//# sourceMappingURL=electro-car.js.map
+    return NewbieDiscount;
+}(discount_1.Discount));
+exports.NewbieDiscount = NewbieDiscount;
+//# sourceMappingURL=newbie-discount.js.map

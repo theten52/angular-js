@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Calculator = exports.Car = void 0;
 // 汽车类
 var Car = /** @class */ (function () {
     // 通过构造函数参数列表定义参数属性
@@ -7,7 +8,7 @@ var Car = /** @class */ (function () {
         this.color = color;
     }
     Car.prototype.run = function () {
-        console.log(this.color + "\u8F66\u5728\u8DD1\u3002\u3002");
+        console.log("".concat(this.color, "\u8F66\u5728\u8DD1\u3002\u3002"));
     };
     return Car;
 }());

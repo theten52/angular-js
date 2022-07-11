@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Discount = void 0;
 // 折扣策略
 var Discount = /** @class */ (function () {
     /**

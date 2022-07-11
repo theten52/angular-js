@@ -23,7 +23,7 @@ var Calculator = /** @class */ (function () {
             console.log('设置属性_precision的值');
             this._precision = value;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(Calculator, "maxOperand", {
@@ -41,7 +41,7 @@ var Calculator = /** @class */ (function () {
             console.log('设置静态属性_maxOperand的值');
             this._maxOperand = value; // this的是当前类，而非实例
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(Calculator, "minOperand", {
@@ -59,7 +59,7 @@ var Calculator = /** @class */ (function () {
             console.log('设置静态属性_minOperand的值');
             this._minOperand = value; // this的是当前类，而非实例
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     /**
