@@ -6,7 +6,7 @@
         map: { // 路径映射
             'rxjs': 'npm:rxjs', // RxJS包路径
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js', // Angular核心包路径，其中npm:会被为上面定义的路径变量npm的值替换
-            '@angular/common': 'npm:@angular/common/bundles/common.umd.js', // Angula通用功能包路径
+            '@angular/common': 'npm:@angular/common/bundles/common.umd.js', // Angular通用功能包路径
             '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js', // Angular浏览器平台包路径
             '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js', // Angular编译器包路径
             '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js' // Angular浏览器平台动态启动包路径
