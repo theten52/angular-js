@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>宠物商店</title>
+    <!-- 1. 加载ECMAScript垫片 -->
+    <script src="node_modules/core-js/client/shim.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. 配置SystemJS -->
+    <script src="src/systemjs.config.js"></script>
+    <!-- 3. 加载Angular应用程序入口文件src/main.js，以完成对Angular的加载，和应用程序的启动 -->
+    <script>
+        System.import('src/main.js').catch(function (err) {
+            // 捕获并显示应用程序启动异常
+            console.error(err);
+        });
+    </script>
+</head>
+<body>
+    <!-- 组件AppComponent的选择器，以通知Angular将组件AppComponent的视图显示到此处 -->
+    <ng-component></ng-component>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": { // 编译器选项
+      "sourceMap": true, // 生成源映射文件
+      "strictNullChecks": true, // 阻止null和undefined被赋给其它类型的变量
+      "target": "es5", // 使当前项目兼容ES5的语法，并将编译结果输出为兼容ES5的JavaScript代码
+      "module": "commonjs", // 将TypeScript模块编译成CommonJS模块
+      "moduleResolution": "node", // 指定模块解析策略
+      "experimentalDecorators": true, // 开启对装饰器的支持
+      "emitDecoratorMetadata": true, // 通过装饰器生成必要的元数据
+      "skipLibCheck": true, // 跳过项目中所有声明文件的类型检查
+      "types": [ // 需要使用的JavaScript类型包
+        "node" // Node.js类型包
+      ],
+      "lib": [ // 需要使用的TypeScript库
+        "es2015", // ECMAScript库
+        "dom" // DOM库
+      ]
+  }
+}

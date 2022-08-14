@@ -1,0 +1,8 @@
+<h2>欢迎来到宠物商店</h2>
+<div>我们拥有了{{petCount}}只宠物，它们分别是：</div>
+<div *ngFor="let pet of pets">
+    科：{{pet.family}}
+    <br/> 名字：{{pet.name}}
+    <br/> 价格：{{pet.price | currency}}
+    <hr/>
+</div>
