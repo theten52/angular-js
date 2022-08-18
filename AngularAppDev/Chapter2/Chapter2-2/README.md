@@ -1,3 +1,5 @@
+# 章节总结和模块介绍
+
 通过对本章内容的学习，我们对Node.js和npm有了一个大概的了解，并准备了一个基于Node.js的跨平台开发环境，最终还基于这一环境创建了一个简单的Web应用程序。
 在这个过程中，我们接触了一些命令。为了便于记忆，现将它们的概况描述如下。
 
@@ -253,7 +255,7 @@ ECMA国际组织在2015年将模块写入了ECMAScript 2015（简称ES 2015）�
 
 
 示例代码：
-```
+```html
 <html>
 
 <head>
@@ -271,7 +273,7 @@ ECMA国际组织在2015年将模块写入了ECMAScript 2015（简称ES 2015）�
 
 ECMAScript模块和核心就是 `<script type="module" src="index.es2015.js"></script>` 这行代码，其中 `type="module"` 就是ECMAScript模块的标识。
 
-# TypeScript和模块的关系。
+# TypeScript和模块的关系
 
 我们可以通过TypeScript来编写遵循ES 2015规范的模块，然后将它编译成兼容更多环境的通用模块。
 ```
