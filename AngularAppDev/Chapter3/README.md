@@ -44,3 +44,32 @@ export function swim() {
 以上代码在再次导出另一个名为temperature的变量的同时，还导出了一个名为swim()的函数，因此无疑也是一个TypeScript模块。
 
 模块中导出的变量和函数可以被模块内的其他代码访问，但更多时候它们是提供给其他模块使用的。而为了能够使用它们，其他模块还需要对它们进行导入。
+
+## 在vscode中隐藏ts编译生成的js文件
+```json
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }, //隐藏编译结果文件                
+        "**/*.js.map": {
+            "when": "$(basename)"
+        } //隐藏编译结果映射文件            
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "window.zoomLevel": 0
+}
+```
+
+以上带有注释的两行代码分别用于隐藏VS Code项目中由TypeScript文件编译而来的JavaScript文件和映射文件，
+但不会隐藏由我们自己手动向项目中添加的JavaScript文件和必要的映射文件。
