@@ -10,5 +10,5 @@ var server = app.listen(3000, function () { // 监听开始回调函数
   var port = server.address().port; // 请求的端口
 
   // 向服务端控制台输出应用程序启动成功提示
-  console.log('当前应用程序正在监听http://%s:%s', host, port);
+  console.log('当前应用程序正在监听 http://%s:%s', host, port);
 });
