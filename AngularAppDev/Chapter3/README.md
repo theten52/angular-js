@@ -1,8 +1,12 @@
 # ts 基本语法
+
+---
 ## 如何使得项目为一个ts项目？
 + 在项目根目录下新建一个名为tsconfig.json的JSON文件。并按规则配置ts相关配置。这样，这个项目即可被定义为一个ts项目。
+---
 ## 什么是TypeScript模块？
 
+---
 ### 反例1：没有定义任何的import和export语句
 ```js
 var temperature = 20;                      // 空气中的温度
@@ -13,6 +17,7 @@ console.log('当前空气温度：' + temperature); // 输出"当前空气温度
 
 顶层的import或export语句又是什么呢？
 
+---
 ### 反例2：import和export语句没有定义在顶层
 ```js
 namespace Land {
@@ -24,7 +29,8 @@ namespace Land {
 
 嵌套在命名空间的语句也不属于模块。
 
-### 正例：import和export语句定义在顶层
+---
+### 正例1：import和export语句定义在顶层
 
 如何定一个未被嵌套的export语句？
 ```js
@@ -34,6 +40,7 @@ export var temperature = 15;
 
 由于以上export语句未被嵌套在任何其他环境中，因此以上代码所在的文件就是一个TypeScript模块。
 
+---
 ### 正例2：导出变量和方法
 ```js
 export var temperature = 36.5;
@@ -45,6 +52,7 @@ export function swim() {
 
 模块中导出的变量和函数可以被模块内的其他代码访问，但更多时候它们是提供给其他模块使用的。而为了能够使用它们，其他模块还需要对它们进行导入。
 
+---
 ## 在vscode中隐藏ts编译生成的js文件
 ```json
 {
@@ -73,3 +81,14 @@ export function swim() {
 
 以上带有注释的两行代码分别用于隐藏VS Code项目中由TypeScript文件编译而来的JavaScript文件和映射文件，
 但不会隐藏由我们自己手动向项目中添加的JavaScript文件和必要的映射文件。
+
+---
+## ts 箭头函数
+---
+### this 指向问题
+
+我们需要知道this作为函数内置的对象，其取值会因函数被调用的方式的不同而不同：
++ （1）当函数在全局作用域中被直接调用时，其中的this对象为JavaScript运行时中的全局对象，比如，浏览器中的window以及Node.js中的global——但在strict模式下为undefined；
++ （2）当函数被当作构造函数调用时，其中的this对象为当前正在被构造的对象；
++ （3）当函数被当作对象的方法调用时，其中的this对象为正在调用当前方法的对象；
++ （4）当函数通过call()函数或bind()函数被调用时，其中的this对象为call()或bind()这两个函数提供的对象。
