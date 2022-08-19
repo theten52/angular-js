@@ -1,10 +1,11 @@
 {
-    "compilerOptions": { // 编译器选项
-        "sourceMap": true, // 生成源映射文件
-        "module": "commonjs", // 将TypeScript模块编译成CommonJS模块
-        "strictNullChecks": true, // 阻止null和undefined被赋给其它类型的变量
-        "target": "es5", // 使当前项目兼容ES5的语法，并将编译结果输出为兼容ES5的JavaScript代码
-        "experimentalDecorators": true, // 开启对装饰器的支持
-        "emitDecoratorMetadata": true // 通过装饰器生成必要的元数据
-    }
+  "compilerOptions": { // 编译器选项
+    "sourceMap": true, // 生成源映射文件
+    "module": "commonjs", // 将TypeScript模块编译成CommonJS模块
+    "strictNullChecks": true, // 阻止null和undefined被赋给其它类型的变量
+    "target": "es5", // 使当前项目兼容ES5的语法，并将编译结果输出为兼容ES5的JavaScript代码
+    "experimentalDecorators": true, // 开启对装饰器的支持
+    "emitDecoratorMetadata": true, // 通过装饰器生成必要的元数据
+    "outDir": "./dist",
+  }
 }
