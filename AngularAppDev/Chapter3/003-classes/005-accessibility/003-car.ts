@@ -1,7 +1,7 @@
 // 汽车类
 export class Car {
     // 通过构造函数参数列表定义参数属性
-    constructor(public color: string ) {
+    constructor(public color: string) {
     }
 
     run(): void {
