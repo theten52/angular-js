@@ -7,7 +7,7 @@ export abstract class StringUtility { // 抽象类，防止被实例化
 
     /**
      * 判断指定的字符串是否是undefined、null、空字符串或空格组成的字符串
-     * @param 要被判断的字符串
+     * @param str 要被判断的字符串
      */
     static isEmpty(str: string): boolean {
         return (!str || /^\s*$/.test(str));

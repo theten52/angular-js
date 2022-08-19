@@ -25,4 +25,5 @@ export abstract class Calculator {
     }
 }
 
+
 // let calculator: Calculator = new Calculator(); // 错误：无法创建抽象类的实例
