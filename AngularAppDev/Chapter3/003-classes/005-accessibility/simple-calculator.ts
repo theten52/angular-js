@@ -1,5 +1,5 @@
 // 必要的导入
-import { Calculator } from "./calculator";
+import { Calculator } from "./001-calculator";
 
 // 简单计时器类
 export class SimpleCalculator extends Calculator {

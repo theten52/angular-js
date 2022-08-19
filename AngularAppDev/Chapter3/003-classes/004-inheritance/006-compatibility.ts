@@ -3,6 +3,8 @@ import { Car } from "./001-car";
 import { SuperSportsCar } from "./003-super-sports-car";
 import { ElectroCar } from "./004-electro-car";
 
+// 类型兼容
+
 // 类型为Car的SportsCar实例
 let superSportsCar: Car = new SuperSportsCar();
 let beep = superSportsCar.beep(); // 获得“滴滴”

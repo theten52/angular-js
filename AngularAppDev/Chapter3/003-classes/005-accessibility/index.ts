@@ -1,5 +1,5 @@
 // 必要的导入
-import { Calculator } from "./calculator";
+import { Calculator } from "./001-calculator";
 import { SimpleCalculator } from "./simple-calculator";
 
 let calculator: Calculator = new Calculator(2);

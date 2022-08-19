@@ -3,6 +3,8 @@ import { Car } from "./001-car";
 import { SportsCar } from "./002-sports-car";
 import { SuperSportsCar } from "./003-super-sports-car";
 
+// 双向协变
+
 // 定义汽车质量检测函数变量，并将一个类型兼容的函数赋给它
 let checkSportsCar: (sportsCar: SportsCar) => boolean;
 checkSportsCar = (car: Car): boolean => {
