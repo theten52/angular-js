@@ -1,6 +1,6 @@
-import { SportsCar } from "./sports-car"; // 导入跑车类
-import { SuperSportsCar } from "./super-sports-car"; // 导入超级跑车类
-import { ElectroCar } from "./electro-car"; // 导入电动汽车类
+import { SportsCar } from "./002-sports-car"; // 导入跑车类
+import { SuperSportsCar } from "./003-super-sports-car"; // 导入超级跑车类
+import { ElectroCar } from "./004-electro-car"; // 导入电动汽车类
 
 let sportsCar: SportsCar = new SportsCar();
 sportsCar.color = '白色'; // 访问继承自父类Car的属性

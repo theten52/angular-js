@@ -1,7 +1,7 @@
 // 必要的导入
-import { Car } from "./car";
-import { SportsCar } from "./sports-car";
-import { SuperSportsCar } from "./super-sports-car";
+import { Car } from "./001-car";
+import { SportsCar } from "./002-sports-car";
+import { SuperSportsCar } from "./003-super-sports-car";
 
 // 定义汽车质量检测函数变量，并将一个类型兼容的函数赋给它
 let checkSportsCar: (sportsCar: SportsCar) => boolean;
@@ -13,7 +13,7 @@ checkSportsCar = (car: Car): boolean => {
     }
     catch {
         return false; // 车辆不合格，返回false
-    }    
+    }
 }
 
 // 创建跑车对象，并以其为参数调用汽车质量检测函数

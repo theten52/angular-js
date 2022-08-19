@@ -1,5 +1,5 @@
 // 导入跑车类
-import { SportsCar } from "./sports-car";
+import { SportsCar } from "./002-sports-car";
 
 // 超级跑车类
 export class SuperSportsCar extends SportsCar {

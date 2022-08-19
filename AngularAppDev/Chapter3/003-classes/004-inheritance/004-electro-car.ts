@@ -1,4 +1,4 @@
-import { Car } from "./car"; // 导入汽车类
+import { Car } from "./001-car"; // 导入汽车类
 
 // 电动汽车类
 export class ElectroCar extends Car {

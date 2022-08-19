@@ -1,7 +1,7 @@
 // 必要的导入
-import { Car } from "./car";
-import { SuperSportsCar } from "./super-sports-car";
-import { ElectroCar } from "./electro-car";
+import { Car } from "./001-car";
+import { SuperSportsCar } from "./003-super-sports-car";
+import { ElectroCar } from "./004-electro-car";
 
 // 类型为Car的SportsCar实例
 let superSportsCar: Car = new SuperSportsCar();
