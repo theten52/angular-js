@@ -1,7 +1,9 @@
-export {} // 使当前文件成为一个模块
+export { } // 使当前文件成为一个模块
+
+// 剩余参数示例
 
 // 添加联系方式
-function addContact(phone: string, ...addresses:string[]) {
+function addContact(phone: string, ...addresses: string[]) {
     console.log(`记录联系方式-电话号码：${phone}` + (addresses && addresses.length ? `，地址：${addresses.join(',')}` : ''));
 }
 
