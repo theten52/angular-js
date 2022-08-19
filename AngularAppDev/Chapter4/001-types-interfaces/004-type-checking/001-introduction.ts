@@ -1,4 +1,4 @@
-// 人类
+// 生物类
 export class Biology {
     name: string;
 }

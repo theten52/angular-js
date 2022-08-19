@@ -1,5 +1,5 @@
 // 导入人类People、人类对象person以及生物类Biology
-import { People, person, Biology } from './introduction';
+import { People, person, Biology } from './001-introduction';
 
 // 仅在person对象是由People类构造的情况下调用其greet()方法
 if (person instanceof People) {

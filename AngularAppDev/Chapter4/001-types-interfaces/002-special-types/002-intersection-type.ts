@@ -1,4 +1,6 @@
-import { Plane, Ship } from './union-type';
+import { Plane, Ship } from './001-union-type';
+
+// 交叉类型示例：
 
 let seaplane: Plane & Ship;
 function createSeaplane(plane: Plane, ship: Ship): Plane & Ship {

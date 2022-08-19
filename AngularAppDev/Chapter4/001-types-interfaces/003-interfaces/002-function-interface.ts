@@ -10,3 +10,4 @@ let add: functionType = (x: number, y: number): number => {
     return x + y;
 }
 let sum: number = add(1, 2); // 得到3
+console.log("sum", sum)

@@ -14,7 +14,9 @@ export class Calculator {
 }
 
 // 类的类型
-let calculatorClass: { maxOperand: number, minOperand: number } = Calculator; console.log(calculatorClass.maxOperand); // 输出100
+let calculatorClass: { maxOperand: number, minOperand: number } = Calculator;
+
+console.log(calculatorClass.maxOperand); // 输出100
 console.log(calculatorClass.minOperand); // 输出-100
 // console.log(calculatorClass.precision); // 错误，precision不是Calculator的对象一侧的成员
 

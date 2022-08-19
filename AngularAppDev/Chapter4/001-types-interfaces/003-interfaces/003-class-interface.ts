@@ -1,5 +1,5 @@
 // 从上一节的class-type.ts中导入计算器类
-import { Calculator } from '../common-types/class-type';
+import { Calculator } from '../001-common-types/003-class-type';
 
 // 计时器类的类型接口
 interface CalculatorClassType {

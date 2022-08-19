@@ -1,5 +1,5 @@
 // 导入上一节的“运行时类型判断”小节的人类People
-import { People } from '../../types-interfaces/type-checking/introduction'
+import { People } from '../../001-types-interfaces/004-type-checking/001-introduction'
 
 /**
  * 人类对象工厂类

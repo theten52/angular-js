@@ -1,5 +1,5 @@
 // 导入上一节的“运行时类型判断”小节的人类People和生物类Biology
-import { People, Biology } from '../../types-interfaces/type-checking/introduction'
+import { People, Biology } from '../../001-types-interfaces/004-type-checking/001-introduction'
 // 导入对象工厂类
 import { ObjectFactory } from './object-factory';
 
