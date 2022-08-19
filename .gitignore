@@ -1,1 +1,5 @@
 **/node_modules
+
+**/wj-temp/
+**/dist/
+**/.DS_Store
