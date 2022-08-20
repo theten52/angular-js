@@ -1,0 +1,13 @@
+{
+    "name": "chapter5",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "express": "4.16.3",
+        "systemjs": "0.21.5",
+        "reflect-metadata": "0.1.12",
+        "@types/jquery": "3.3.29",
+        "jquery": "3.3.1",
+        "@types/node": "10.12.9"
+    }
+}
