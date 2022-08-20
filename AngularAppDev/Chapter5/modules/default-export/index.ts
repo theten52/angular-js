@@ -12,3 +12,7 @@ console.log(sum); // 输出3
 // 字符串拼接
 var concatenation = concatenate('1', '2'); // 得到字符串12
 console.log(concatenation); // 输出字符串12
+
+// 减法计算
+var result = subtract(5, 1); // 得到4
+console.log(result); // 输出4
