@@ -1,5 +1,5 @@
 // 导入前面新定义的人类People
-import { People, Address } from "../introduction";
+import { People, Address } from "../001-introduction/001-introduction";
 
 /**
  * 为人类People定义元数据

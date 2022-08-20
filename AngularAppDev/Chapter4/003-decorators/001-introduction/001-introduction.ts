@@ -1,5 +1,5 @@
 // 导入上一节的泛型对象工厂类ObjectFactory
-import { ObjectFactory } from '../002-generics/002-classes/003-object-factory';
+import { ObjectFactory } from '../../002-generics/002-classes/003-object-factory';
 
 /**
  * 地址类
@@ -15,7 +15,7 @@ export class Address {
 }
 
 /**
- * 人类
+ * 人类 
  */
 export class People {
     name: string; // 姓名

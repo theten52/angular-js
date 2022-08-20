@@ -1,5 +1,5 @@
 // 导入本节开头的人类People
-import { People } from '../introduction';
+import { People } from '../001-introduction/001-introduction';
 // 导入本小节的泛型对象工厂类ObjectFactory
 import { ObjectFactory } from './object-factory';
 // 导入元数据定义函数
