@@ -1,5 +1,5 @@
 // 导入上一节的泛型对象工厂类ObjectFactory
-import { ObjectFactory } from '../generics/classes/object-factory';
+import { ObjectFactory } from '../002-generics/002-classes/003-object-factory';
 
 /**
  * 地址类

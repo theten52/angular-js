@@ -1,4 +1,4 @@
-import { Biology } from '../001-types-interfaces/004-type-checking/001-introduction';
+import { Biology } from '../../001-types-interfaces/004-type-checking/001-introduction';
 
 // 使用类型约束
 function add<T extends number | string>(x: T, y: T): T {
