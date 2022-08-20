@@ -1,6 +1,6 @@
 // 导入属性装饰器和地址类
-import { PropertyDecorator } from './property-decorator';
-import { Address } from './address';
+import { PropertyDecorator } from './001-property-decorator';
+import { Address } from './002-address';
 
 /**
  * 人类

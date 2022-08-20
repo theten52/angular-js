@@ -1,5 +1,5 @@
 // 导入属性装饰器PropertyDecorator
-import { PropertyDecorator } from './property-decorator';
+import { PropertyDecorator } from './001-property-decorator';
 
 /**
  * 地址类
