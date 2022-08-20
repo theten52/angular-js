@@ -1,14 +1,14 @@
 // 导入方法装饰器和参数装饰器
-import { MethodDecorator } from './method-decorator';
-import { ParameterDecorator } from './parameter-decorator';
-import { AccessorDecorator } from './accessor-parameter';
+import { MethodDecorator } from './001-method-decorator';
+import { ParameterDecorator } from './003-parameter-decorator';
+import { AccessorDecorator } from './004-accessor-parameter';
 
 // 计算器类
 export class Calculator {
-    private _precision:number;
+    private _precision: number;
 
     @AccessorDecorator
-    get precision():number {
+    get precision(): number {
         return this._precision;
     }
 
