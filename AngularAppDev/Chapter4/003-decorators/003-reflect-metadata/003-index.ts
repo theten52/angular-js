@@ -1,9 +1,9 @@
 // 导入本节开头的人类People
 import { People } from '../001-introduction/001-introduction';
 // 导入本小节的泛型对象工厂类ObjectFactory
-import { ObjectFactory } from './object-factory';
+import { ObjectFactory } from './002-object-factory';
 // 导入元数据定义函数
-import { setPeopleMetadata, setAddressMetadata } from './utility';
+import { setPeopleMetadata, setAddressMetadata } from './001-utility';
 
 // 定义元数据
 setPeopleMetadata();
