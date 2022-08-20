@@ -1,16 +1,17 @@
 {
-    "compilerOptions": { // 编译器选项
-        "sourceMap": true, // 生成映射文件
-        "module": "commonjs", // 指定生成的JavaScript的模块规范
-        "moduleResolution": "node", // 指定模块解析策略
-        "types": [ // 需要使用的JavaScript类型包
-            "jquery",
-            "node"
-        ],
-        "lib": [ // 需要使用的TypeScript库
-            "es2015",
-            "dom"
-        ],
-        "outDir": "./dist",
-    }
+  "compilerOptions": { // 编译器选项
+    "sourceMap": true, // 生成映射文件
+    "module": "commonjs", // 指定生成的JavaScript的模块规范
+    "moduleResolution": "node", // 指定模块解析策略
+    "types": [ // 需要使用的JavaScript类型包
+      "jquery",
+      "node"
+    ],
+    "lib": [ // 需要使用的TypeScript库
+      "es2015",
+      "dom"
+    ],
+    "outDir": "./dist",
+    "skipLibCheck": true
+  }
 }
