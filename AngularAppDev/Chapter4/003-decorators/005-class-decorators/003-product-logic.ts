@@ -1,7 +1,7 @@
 // 导入商品数据类、商品类和类装饰器
-import { ProductData } from "./product-data";
-import { Product } from "./product";
-import { ClassDecorator } from "./class-decorator";
+import { ProductData } from "./002-product-data";
+import { Product } from "./001-product";
+import { ClassDecorator } from "./005-class-decorator";
 
 /**
  * 商品逻辑类

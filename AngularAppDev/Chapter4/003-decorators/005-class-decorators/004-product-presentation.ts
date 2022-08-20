@@ -1,7 +1,7 @@
 // 导入商品逻辑类、商品类和类装饰器
-import { ProductLogic } from "./product-logic";
-import { Product } from "./product";
-import { ClassDecorator } from "./class-decorator";
+import { ProductLogic } from "./003-product-logic";
+import { Product } from "./001-product";
+import { ClassDecorator } from "./005-class-decorator";
 
 /**
  * 商品展示类

@@ -1,5 +1,5 @@
 // 导入商品类
-import { Product } from './product';
+import { Product } from './001-product';
 
 /**
  * 商品数据类

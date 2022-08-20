@@ -1,11 +1,11 @@
 // 导入reflect-metadata
 import 'reflect-metadata';
 // 导入依赖注入器、目标类和映射类类
-import { DependencyInjector } from './dependency-injector';
-import { ProductData } from './product-data';
-import { ProductLogic } from './product-logic';
-import { ProductPresentatioin } from './product-presentation';
-import { DbProductData } from './db-product-data';
+import { DependencyInjector } from './006-dependency-injector';
+import { ProductData } from './002-product-data';
+import { ProductLogic } from './003-product-logic';
+import { ProductPresentatioin } from './004-product-presentation';
+import { DbProductData } from './008-db-product-data';
 
 // 注册类映射
 export function config(): void {

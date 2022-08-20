@@ -1,10 +1,10 @@
 // 导入依赖注入器
-import { DependencyInjector } from './dependency-injector';
+import { DependencyInjector } from './006-dependency-injector';
 // 导入依赖映射注册函数
-import { config } from './di-config';
+import { config } from './007-di-config';
 // 导入商品展示类和商品逻辑类
-import { ProductPresentatioin } from "./product-presentation";
-import { ProductLogic } from './product-logic';
+import { ProductPresentatioin } from "./004-product-presentation";
+import { ProductLogic } from './003-product-logic';
 
 // 注册依赖映射
 config();
