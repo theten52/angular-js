@@ -9,5 +9,6 @@ let objectFactory = new ObjectFactory(People);
 // console.log(`年龄：${person.age}`);
 
 // 将包含address属性的JSON字符串反序列化成人类对象
-let json1: string = '{"name": "Lcng", "age": 1, "address":{"street":""}}';
+let json1: string = '{"name": "Lcng", "age": 1, "address":{"street":"aaa"}}';
 let person1: People = objectFactory.createObject(json1);
+console.log("person", person1);
