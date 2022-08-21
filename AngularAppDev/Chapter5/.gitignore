@@ -7,3 +7,6 @@ target/
 !declaration-files/write-dts/sky.js
 !declaration-files/ambient-context/ghost.js
 !declaration-files/write-dts/universe.js
+
+!hero-package/dc.js
+!hero-package/marvel.js
