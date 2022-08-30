@@ -10,7 +10,7 @@
         "@angular/platform-browser-dynamic": "7.0.4",
         "core-js": "2.5.7",
         "rxjs": "6.3.3",
-        "systemjs": "0.21.5",
+        "systemjs": "6.12.4",
         "zone.js": "0.8.26"
     },
     "devDependencies": {
