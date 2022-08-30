@@ -1,0 +1,10 @@
+{
+  "name": "fetch-demo",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "follow-redirects": "^1.99.99",
+    "fs": "0.0.1-security",
+    "node-fetch": "^1.7.3"
+  }
+}
