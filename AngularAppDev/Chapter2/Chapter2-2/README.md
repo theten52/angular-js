@@ -128,7 +128,7 @@ RequireJS是遵循AMD规范的模块加载器，可用于在浏览器和Node.js�
 
 SystemJS也有自己的模块规范，这一规范与CommonJS和AMD等规范互不兼容，因此其他模块加载器无法加载SystemJS模块。另外，SystemJS需要在相应的插件的帮助下才能加载ECMAScript模块及图片和文本等资源。这些插件的用法并不复杂，但由于本书不涉及ECMAScript模块及图片和文本等资源的加载，因此不会介绍这些插件的用法。
 
-## Node和浏览器关于模块加载器的不同
+## 关于在Node和浏览器中模块加载器的说明
 Node.js就内置了这样一个模块加载器。在node中，我们不需要指定模块加载器也可以正常加载模块。
 
 ```
@@ -159,12 +159,12 @@ CommonJS模块之所以可以被Node.js加载，是因为Node.js中内置了一�
 <head>
   <title>hello, world</title>
   <!— 加载 模块加载器 SystemJS -->
-    <script src="/node_modules/systemjs/dist/system.js"></script>
-    <script>
-      // 使用模块加载器SystemJS加载index.js        
-      System.import('index.js');
+  <script src="/node_modules/systemjs/dist/system.js"></script>
+  <script>
+    // 使用模块加载器SystemJS加载index.js        
+    System.import('index.js');
 
-    </script>
+  </script>
 </head>
 
 <body> hello, world</body>
@@ -192,26 +192,26 @@ SystemJS创建的独立作用域会被注入一些用于模块的导入和导出
 <head>
   <title>hello, world</title>
   <!—加载模块加载器SystemJS-->
-    <script src="/node_modules/systemjs/dist/system.js"></script>
-    <script>
-      (function () {
-        // 对SystemJS进行配置
-        System.config({
-          // 路径配置
-          packages: {
-            // 根路径
-            '/': {
-              // 设置根路径下的资源的默认后缀为.js
-              defaultExtension: 'js'
-            }
+  <script src="/node_modules/systemjs/dist/system.js"></script>
+  <script>
+    (function () {
+      // 对SystemJS进行配置
+      System.config({
+        // 路径配置
+        packages: {
+          // 根路径
+          '/': {
+            // 设置根路径下的资源的默认后缀为.js
+            defaultExtension: 'js'
           }
-        })
-      })();
+        }
+      })
+    })();
 
-      // 使用模块加载器SystemJS加载index.js        
-      System.import('index.js');
+    // 使用模块加载器SystemJS加载index.js        
+    System.import('index.js');
 
-    </script>
+  </script>
 </head>
 
 <body> hello, world</body>
@@ -248,7 +248,9 @@ SystemJS创建的独立作用域会被注入一些用于模块的导入和导出
 + （5）最后，我们切换到了控制台，并看到了其中的问候“hello, world”——这就是图2-42所示的结果。
 
 以上便是使用SystemJS加载通用模块index.js和hello-world.js的过程，同时我们还顺便见证了TypeScript在浏览器中也能调试。
-但到目前为止，我们都还没有感受到通用模块带来的实际好处，为此让我们对index.ts和hello-world.ts再进行一次最后的修改，使它们的内容分别与代码清单2-20和代码清单2-21一致。
+
+这就是模块的魅力，每一个模块都有各自的作用域，同时每一个模块也可以导出公共的变量和函数，或导入其他模块导出的公共变量和函数。
+
 # ECMAScript模块
 
 ECMA国际组织在2015年将模块写入了ECMAScript 2015（简称ES 2015）中，从而使支持ES 2015的浏览器（或其他JavaScript运行环境）可以直接加载符合ES 2015规范的模块，即ECMAScript模块。
