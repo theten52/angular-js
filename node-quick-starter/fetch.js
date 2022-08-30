@@ -10,7 +10,9 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://ph.xiapibuy.com/api/v4/item/get?itemid=12619726175&shopid=143517563", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+module.exports = function () {
+  fetch("https://ph.xiapibuy.com/api/v4/item/get?itemid=12619726175&shopid=143517563", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
