@@ -1,6 +1,8 @@
 # 参考
-1. [参考链接](https://www.expressjs.com.cn/en/starter/generator.html)。
-2. 有用的命令：
+1. [生成器](https://www.expressjs.com.cn/en/starter/generator.html)。
+2. [路由基础](https://www.expressjs.com.cn/starter/basic-routing.html)。
+3. [路由](https://www.expressjs.com.cn/guide/routing.html)。
+4. 有用的命令：
   ```terminal
 
     change directory:
@@ -59,3 +61,10 @@ npm run start
 ```
 
 然后在浏览器中打开 http://localhost:3000/ 网址就可以看到这个应用了。
+
+# 04 程序执行流程
+参考[app.js](app.js)。
+
+1. 在`app.js`中定义好路由和视图的地址。当前请求路径和定义好的路由匹配时，路由会根据定义的规则将对应的视图返回给浏览器。
+    1. 路由的`res.render('index', { title: 'Express' });`方法会将对应视图目录下的`index`模板渲染为html并返回给浏览器。
+2. `app.js`会中还会定义一些中间件方便`express`运行中使用。
