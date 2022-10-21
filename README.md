@@ -1,1 +1,1 @@
-# angular js 和 node 、 express 教程
+# Angular JS 和 node 、 express 、 typescript 教程
