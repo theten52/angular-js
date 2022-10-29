@@ -4,6 +4,7 @@ import add from './calculator';
 import concatenate from './calculator';
 // 导入模块calculator.ts非默认导出的减法函数subtract
 import { subtract } from './calculator';
+import { subtract1 } from './calculator';
 
 // 加法计算
 var sum = add(1, 2); // 得到3
@@ -15,4 +16,7 @@ console.log(concatenation); // 输出字符串12
 
 // 减法计算
 var result = subtract(5, 1); // 得到4
+console.log(result); // 输出4
+// 减法计算
+var result = subtract1(5, 1); // 得到4
 console.log(result); // 输出4

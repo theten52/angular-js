@@ -7,3 +7,8 @@ export default function add(x, y) {
 export function subtract(x, y) {
     return x - y;
 }
+
+// 导出减法函数subtract()
+export function subtract1(x, y) {
+    return x - y;
+}
