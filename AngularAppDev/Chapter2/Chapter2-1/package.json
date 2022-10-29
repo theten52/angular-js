@@ -4,6 +4,6 @@
   "private": true,
   "dependencies": {
     "express": "4.16.3",
-    "systemjs": "6.12.4"
+    "systemjs": "0.21.5"
   }
 }
