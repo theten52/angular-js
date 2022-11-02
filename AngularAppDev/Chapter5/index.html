@@ -1,30 +1,33 @@
 <html>
-    <head>
-        <script src='./namespaces/bull.js'></script>
-        <script src='./namespaces/ox.js'></script>
-        <script src='./namespaces/index.js'></script>
 
-        <!--加载模块加载器SystemJS-->
-        <script src="/node_modules/systemjs/dist/system.js"></script>
-        <script>
-            (function () {
-                System.config({ // 对SystemJS进行配置
-                    packages: { // 路径配置
-                        '/': { // 根路径
-                            defaultExtension: 'js' // 设置根路径下的资源的默认后缀为.js
-                        }
+<head>
+    <script src='./namespaces/bull.js'></script>
+    <script src='./namespaces/ox.js'></script>
+    <script src='./namespaces/index.js'></script>
+
+    <!--加载模块加载器SystemJS-->
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script>
+        (function () {
+            System.config({ // 对SystemJS进行配置
+                packages: { // 路径配置
+                    '/': { // 根路径
+                        defaultExtension: 'js' // 设置根路径下的资源的默认后缀为.js
                     }
-                })
-            })();
-    
-            // 使用模块加载器SystemJS加载index.js
-            System.import('/namespaces/global-augmentation/index.js');
-        </script>
-    </head>
-    <body>
-        <!--加载jQuery-->
-        <script src="/node_modules/jquery/dist/jquery.js"></script>
-        <!--加载use-javascript.ts的编译结果-->
-        <script src="./declaration-files/javascript-types/use-jquery.js"></script>
-    </body>
+                }
+            })
+        })();
+
+        // 使用模块加载器SystemJS加载index.js
+        System.import('./namespaces/global-augmentation/index.js');
+    </script>
+</head>
+
+<body>
+    <!--加载jQuery-->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!--加载use-javascript.ts的编译结果-->
+    <script src="./declaration-files/javascript-types/use-jquery.js"></script>
+</body>
+
 </html>
